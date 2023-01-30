@@ -72,13 +72,13 @@ $hotels = [
                     <td><?php echo $hotel['description'] ?></td>
                     <td>
                         <?php if($hotel['parking']){
-                            echo 'Si';
+                            echo 'Si' ."&check;";
                         }else{
-                            echo 'No';
+                            echo 'No' ."&cross;";
                             }; ?>
                     </td>
                     <td><?php echo $hotel['vote'] ?></td>
-                    <td><?php echo $hotel['distance_to_center'] ?></td>
+                    <td><?php echo $hotel['distance_to_center'] ."km" ?></td>
                 </tr>
             <?php }?>
         </tbody>
